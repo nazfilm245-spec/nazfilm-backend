@@ -24,6 +24,8 @@ const MovieSchema = new mongoose.Schema(
 
     isVIP: { type: Boolean, default: false },
     isFeatured: { type: Boolean, default: false },
+    price: { type: Number, default: 50 },
+    isKids: { type: Boolean, default: false },
 
     director: { type: String, default: '' },
     cast: { type: [String], default: [] },
